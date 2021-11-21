@@ -1,0 +1,37 @@
+Arithmetic operations 
+Area
+	Circle
+	Square
+	Rectangle
+	Triangle
+
+Area volume
+	Sphere
+	Cube
+	Cuboid
+	Cone
+	Cylinder
+	Hemisphere
+	
+Multiplication table
+Fibonacci Series
+Max between two numbers
+Max between three numbers
+Swap two number
+ASCII value of a character
+Reverse of a number
+HCF and LCM
+Co-prime or not
+Vowel or consonent
+ASCII table
+Palindrome or not
+Armstrong or not
+Prime or not
+Temperature Converter
+Square root of a number
+Power of a number
+Area using Heron's formula
+Leap year or not
+Sum of n series
+Patterns
+Roots of quadratic equation

@@ -1,0 +1,16 @@
+
+W.A.P in c++ to find area of circle.
+W.A.P in c++ to find sum of any 5 numbers.
+W.A.P in c++ to check a number is armstrong or not.
+W.A.P in c++ to check a number is palindrome or not.
+W.A.P in c++ to print prime number between 1 to 100.
+W.A.P in c++ to find HCF and LCM of a number.
+W.A.P in c++ to find reverse of a number.
+W.A.P in c++ to check which is greater among 5 numbers.
+W.A.P in c++ to check which is smaller among 5 numbers.
+W.A.P in c++ to swap the values of two numbers.
+W.A.P in c++ to find the factorial of a number using function.
+W.A.P in c++ to print fibonacci series upto 100.
+W.A.P in c++ to design a class Student having public members as roll, name, address, age, 
+     marks of three subjects and a function average() to calculate the average marks of three subjects.
+W.A.P in c++ to show all functions of string.

@@ -1,0 +1,91 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int n1, n2, choice;
+float f1, f2;
+
+int main()
+{
+    cout << "1: Arithmetic operations " << endl;
+    cout << "2: Mensuration" << endl;
+    cout << endl;
+
+    cout << "Enter your choice : ";
+    cin >> choice;
+    switch (choice)
+    {
+    case 1:
+        cout << "1: Addition of two numbers" << endl;
+        cout << "2: Subtraction of two numbers" << endl;
+        cout << "3: Multiplication of two numbers" << endl;
+        cout << "4: Division of two numbers" << endl;
+
+        cout << "Enter choice : ";
+        cin >> choice;
+
+        cout << "Enter first number : ";
+        cin >> n1;
+        cout << "Enter second number : ";
+        cin >> n2;
+
+        switch (choice)
+        {
+        case 1:
+            cout << n1 + n2 << endl;
+            break;
+        case 2:
+            cout << n1 - n2 << endl;
+            break;
+        case 3:
+            cout << n1 * n2 << endl;
+            break;
+        case 4:
+            cout << "Quotient : " << n1 / n2 << endl;
+            cout << "Remainder : " << n1 % n2 << endl;
+            break;
+        default:
+            cout << "Invalid choice" << endl;
+        }
+        break;
+    case 2:
+        cout << "1: Circle" << endl;
+        cout << "2: Square" << endl;
+        cout << "3: Rectangle" << endl;
+        cout << "4: Triangle" << endl;
+
+        cout << "Enter your choice : ";
+        cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            cout << "Enter radius : ";
+            cin >> f1;
+            cout << "Area : " << 3.14 * f1 * f1 << " sqr unit" << endl;
+            cout << "Circumference : " << 2 * 3.14 * f1 << " unit" << endl;
+            break;
+        case 2:
+            cout << "Enter length of side : ";
+            cin >> f1;
+            cout << "Area : " << f1 * f1 << " sqr unit" << endl;
+            cout << "Perimeter : " << 4 * f1 << " unit" << endl;
+            break;
+        case 3:
+            cout << "Enter length : ";
+            cin >> f1;
+            cout << "Enter breadth : ";
+            cin >> f2;
+            cout << "Area : " << f1 * f2 << " sqr unit" << endl;
+            cout << "Perimeter : " << 2 * (f1 + f2) << " unit" << endl;
+        
+        }
+        break;
+
+    default:
+        cout << "Invalid choice" << endl;
+    }
+    cout << "*** END OF PROGRAM ***";
+    getch();
+}

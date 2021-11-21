@@ -1,0 +1,119 @@
+# if - else
+
+    Write a C++ program to find maximum between two numbers.
+    
+    Write a C++ program to find maximum between three numbers.
+    
+    Write a C++ program to check whether a number is negative, positive or zero.
+    
+    Write a C++ program to check whether a number is even or odd.
+    
+    Write a C++ program to input any alphabet and check whether it is vowel or consonant.
+    
+    Write a C++ program to check whether a character is alphabet or not.
+    
+    Write a C++ program to check whether a year is leap year or not.
+
+# switch
+
+    Write a C++ program to print day of week name using switch case.
+
+    Write a C++ program to check whether an alphabet is vowel or consonant using switch case.
+
+    Write a C++ program to find maximum between two numbers using switch case.
+
+    Write a C++ program to check whether a number is even or odd using switch case.
+
+# loop
+
+    Write a C++ program to print all natural numbers from 1 to n. - using while loop
+
+    Write a C++ program to print all natural numbers from 1 to n. - using for loop
+
+    Write a C++ program to print all natural numbers in reverse (from n to 1). - using for loop
+
+    Write a C++ program to print all even numbers between 1 to 100. - using for loop
+
+    Write a C++ program to print all odd number between 1 to 100. - using for loop
+
+    Write a C++ program print first  N natural no in reverse. 
+
+    Write a C++ program to count digits in a no. 
+
+    Write a C++ program to calculate sum of digits of a number.
+
+    Write a C++ program to calculate sum of first N  natural no.
+
+    Write a C++ program to calculate product of digits of a number. (number should not contain zero)   
+
+    Write a C++ program to enter a number and print its reverse.
+
+    Write a C++ program to check whether a number is palindrome or not.
+
+    Write a C++ program to find frequency of each digit in a given integer.
+
+    WAP in C++ to print all ASCII character with their values.
+
+# Function
+
+    Write a C++ program to find cube of any number using function.
+
+    Write a C++ program to find diameter, circumference and area of circle using functions.
+
+    Write a C++ program to check whether a number is even or odd using functions.
+
+    Write a C++ program to find maximum and minimum between two numbers using functions.
+
+    Write a C++ program to check a number is prime, perfect number or not.
+
+    Write a C++ program to find all prime numbers between given interval using functions.
+
+# Array
+
+    Write a C++ program to print all negative elements in an array. ( 1d array )
+
+    Write a C++ program to find sum of all array elements. ( 1d array )
+
+    Write a C++ program to find maximum and minimum element in an array. ( 1d array )
+
+    Write a C++ program to print all even elements in an array[10]. ( 1d array )
+
+    Write a C++ program to print all odd elements in an array[10]. ( 1d array )
+
+    Write a C++ program to copy all elements from an array to another array. ( 1d array )
+
+    Write a C++ program to count total number of negative elements in an array. ( 1d array )
+    
+
+# Matrix (2d array)
+
+    Write a C++ program to add two matrices.
+
+    Write a C++ program to subtract two matrices.
+
+    Write a C++ program to check whether two matrices are equal or not.
+
+# String
+
+    C++ program to copy one string to another string with using strcpy()
+
+    C++ program to copy one string to another string without using strcpy()
+
+    Write a C++ program to find reverse of a string.
+
+    Write a C++ program to convert lowercase string to uppercase.
+
+    Write a C++ program to convert string to lowercase.
+
+    Write a C++ program to toggle case of each character of a string.
+
+    Write a C++ program to check whether a string is palindrome or not.
+
+    C++ program to find total number of alphabets, digits and special characters in a string.
+
+    C++ program to count total number of vowels and consonants in a string.
+
+    C++ program to count number of words in a string.
+
+    WAP in C++ to reverse the order of string.
+

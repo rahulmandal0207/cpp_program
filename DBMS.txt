@@ -1,0 +1,558 @@
+History of Database and DBMS :
+
+    The concept of Database was introduced by IBM in 1960s.
+    Database management system (DBMS) that is based ont the relational model invented by Edgar F.codd
+    at IBM in 1970.
+
+Data : Collection of meaningful information
+e.g - Text , number , image , videos.
+
+Database : Systematic collection of data.
+e.g - 1. record of student stored in files.
+      2. information stored over internet.
+
+Database Management System (DBMS) : The software which is used to manage database is called Database 
+Management System (DBMS).
+    e.g. 1. MySQL
+         2. Microsoft Access
+
+Introduction to DBMS.
+
+    DBMS stads for Database Management System.
+    DBMS = Database + Management system
+    A DBMS stores data in such a way that it becomes easier to retrieve , manipulate and produce information.
+    Database is a collection of data and Management system is a set of program to store and retrieve
+    those data.
+
+Need of DBMS :
+
+    The manual filing system works well when the number of items to be stored is small.
+    It event works quite well when the number of items stored is quite large and they are only needed to be 
+    stored and retrieved.
+    However a manual file system crashes when cross-referencing and processing of information in the file is
+    carried out.
+
+Limitation of File Based system : The file-based system has certain limitations.
+
+    1. Seperation and Isolation : When the data is stored in seperate files it becomes difficult to access.
+    It becomes extremely complex when the data has to be retrieveed from more than two files.
+
+    2.Duplication of Data : Due to decentralised approach , the file system leads to uncontrolled 
+    duplication of data.
+    This is undesirable as the duplication leads to wastage of a lot of storage space.
+    It also costs time an money to enter the data more that once.
+
+    3. Inconsistent Data : The data in a file system become inconsistent if more thant one person 
+    modifies the data concurrently
+
+    4. Data dependence : The physical structure and storage of data files and records are defined in the 
+    application code.
+
+# Date : 17-06-21
+
+    5.Incompatible file formate : 
+
+    6.Fixed queries : Producing different types of queries or reports is not possible 
+    in File Based Systems
+
+
+Database Approach : The difficulties that arise from using the file-based system have prompted
+the development of a new approach in managing large amounts of organizational information called 
+the database approach.
+
+
+    File Based System 
+        Cheaper
+        Data dependent
+        Data redundancy
+        Inconsistent data
+        Fixed queries
+    
+    Database Approach
+        Costly
+        Data independent
+        Controlled data redundancy
+        consistent Data
+        unforseen queries can be asnwered 
+
+The database approach has many advantages : 
+    
+    1. Reduction of redundancy : In database approach data can be stored at a single place or 
+    with controlled redundancy under DBMS, which saves space and does not permit inconsistency.
+
+    2. Shared data : A DBMS allows the  sharing of database under its control by any number of 
+    application programs or users
+
+    3. Data independence : Database 
+    Management systems separates data descriptions from data. Hence it is not affected by 
+    changes. This is called Data Independence,  where details of data are not exposed.
+
+    4. Improve integrity : Data Integrity refers to validity and consistency of data. 
+    Data Integrity means that the data should be accurate and consistent. 
+    This is done by providing some checks or constraints.
+
+    5. Effiecient data access : DBMS utilises techiques to store and retrieve the data efficiently
+    at least for unforseen queries.
+
+    6. Multiple user interface : 
+
+    7. Representing complex relationship among data :
+
+    8. Improved Security : 
+
+    9. Improved Backup and Recovery :
+
+    10. Support for concurrent transactions :
+
+
+
+# Date : 18-06-21
+
+DBMS are very complex , sophisticated software application that provide reliable large amount of data.
+
+There are two different ways to look at the architecture of a DBMS :
+
+    a) The logical DBMS architecture : The logical architecture deals with the way data is stored and 
+    presented to user.
+
+    b) The physical DBMS architecture : The physical architecture is concerned with the software 
+    components that make up a DBMS
+
+
+logical DBMS architecture or three level architecture :- 
+
+    The logical architecture describes how data in the database is perceived by users. 
+    It is not concerned with how the data is handled  and processed by the DBMS, but only 
+    with how it looks.
+    Users can manipulate the data without worrying about where it is located or how it is
+    actually stored. 
+    This  results in the database having different levels 
+    of abstraction.
+
+    // diagram
+
+    External or user view : The External or View Level 
+    The external or view level is the highest level of abstraction of database. 
+    It provides a window on the conceptual view, which allows the user to see only the data of 
+    interest to them. 
+    The user can be either an application program or an end user.
+    There can be many external views as any number of external schema can be defined and they can 
+    overlap each other.
+
+    Conceptual Level or Global level : The conceptual level presents a logical view of the 
+    entire database as a unified whole. 
+    It allows the user to bring all the data in the database together and see it in a consistent manner. 
+    Hence, there is only one conceptual schema per database
+    The data definition language used to create the conceptual level must not specify any 
+    physical storage considerations that should be handled by the physical level.
+
+    Internal or Physical level : The collection of files permanently stored on secondary storage devices is known as 
+    the physical database.
+    The physical or internal level is the one closest to physical 
+    storage, and it provides a low-level description of the physical database, and an 
+    interface between the operating systems file system and the record structures used in 
+    higher levels of abstraction.
+
+    At this level methods of storage 
+    are defined, as well as how stored fields are represented, what physical sequence the 
+    stored records are in, and what other physical structures exist
+
+
+# Date : 19-06-21
+
+The need for three level architecture : 
+
+    The objective of three level architecture
+    is to saperate eacht user's view of the 
+    database from the way the database is 
+    physically represented.
+
+    1. Support of multiple user views : Each user is able to access the same data, but have 
+    a different customized view of the data. 
+    Each user should be able to change the way he or she views the data and his 
+    change should not affect other users.
+
+    2. Insulation between user programs and data that does not concern them : User should not 
+    directly deal with physical storage details , such as indexing or hashing . 
+    The user's interactions with the database should be independent of storage considerations. 
+
+Physical DBMS architecture : 
+    
+    The physical architecture describes the software components used to enter and process 
+    data, and how these software components are related and interconnected. 
+    Although it is not possible to generalise the component structure of a DBMS, it is possible to 
+    identify a number of key functions which are common to most database management 
+    systems.
+
+All the Database Management systems have two basic sets of Languages ─ Data 
+Definition Language (DDL) that contains the set of commands required to define the 
+format of the data that is being stored and Data Manipulation Language (DML) which 
+defines the set of commands that modify, process data to create user definable output. 
+
+DML precompiler : 
+
+    The DML statements can also be written in an application program. The DML 
+    precompiler converts DML statements (such as SELECT…FROM in Structured 
+    Query Language (SQL) ) embedded in an application program to 
+    normal procedural calls in the host language. The precompiler interacts with the query 
+    processor in order to generate the appropriate code.
+
+
+DDL compiler : 
+
+    The DDL compiler convers the data definition statements (such as CREATE TABLE ... in SQL) 
+    into a set of a tables containing metadata tables. 
+    These tables contain information concerning the database and are in a form that can be used by 
+    other components of the DBMS. 
+    These tables are then stored in a system catalog or data dictionary
+
+File manager : 
+
+    File manager manages the allocation of space on disk storage. 
+    It establishes and 
+    maintains the list of structures and indices defined in the internal schema that is used 
+    to represent information stored on disk. However, the file manager does not directly 
+    manage the physical output and input of data. 
+    It passes the requests on to the 
+    appropriate access methods, which either read data from or write data into the system 
+    buffer or cache. 
+    The file manager can be implemented using an interface to the 
+    existing file subsystem provided by the operating system of the host computer or it 
+    can include a file subsystem written especially for the DBMS.
+
+     
+# Date : 21-06-21
+
+Database manager : // diagram
+
+A database manager is a program module responsible for interfacing with the database 
+file system to the user queries. 
+In addition, the tasks of enforcing constraints to 
+maintain the consistency and integrity of the data as well as its security are also 
+performed by database manager.
+
+There are some important responsibility 
+of Database manager: -
+
+    1. Intraction with file manager : 
+
+    2. Integrity enforcement : The data values stored in the database must satisfy 
+    certain types of consistency constraints.
+
+    3. Security enforcement : As discussed above, not every user of the database 
+    needs to have access to the entire content of the database. 
+    It is the job of the database manager to enforce these security requirements.
+
+    4. Backup and recovery : It is the responsibility of database manager to detect such 
+    failures and restore the database to a state that existed prior to the occurrence of the failure. 
+    This is usually accomplished through the backup and recovery procedures.
+
+    5. Concurrency control : When several users update the database concurrently, 
+    the consistency of data may no longer be preserved.
+
+# Date : 23-06-21
+
+The above task are achieve through the Database manager:
+
+    1. Authorization control : This module checks that the user has necessary 
+    authorisation to carry out the required function.
+
+    2. Command processor : Command processor converts commands to a logical sequence of steps.
+
+    3. Integrity Checker : The integrity checker checks that the requested operation satisfies 
+    all necessary integrity constraints such as key constraints.
+
+    4. Query optimiser : This module determines an optimal strategy for the query execution.
+
+    5. Transactions manager : The transactions manager maintains table of authorisation concurrency.
+    It performs the required processing of operation of various transactions.
+
+    6. Schedular : This module is responsible for ensuring that concurrent operations 
+    or transactions 
+    on the database proceed without conflicting with one another.
+
+    7. Recovery Manager : This module ensures that the database remains in a 
+    consistent state in the presence of failures. 
+    It is responsible for transaction commit and abort, that is success or failure of transaction.
+
+    8. Buffer manager : This module is responsible for the transfer of data between 
+    main memory and secondary storage, such as disk and tape. 
+    The recovery manager and the buffer manager are sometimes collectively referred to 
+    as data manager.
+
+Query processor : The query language processor is responsible for receiving query language statements 
+and changing them from the English-like syntax of the query language to a form the 
+DBMS can understand. 
+The query language processor usually consists of two separate parts: the parser and the query optimizer.
+
+Parser : The parser receives query language statements from application programs or 
+command-line utilities and examines the syntax of the statements to ensure they are correct. 
+To do this, the parser breaks a statement down into basic units of syntax.
+
+
+DBA : The fullname of DBA is Database Administrator.
+
+    DBA is a person in the organization who controls the design and the use of database.
+    DBA is a technical person having knowledge of database technology.
+    DBA does not need to be a business person, but any kind of knowledge about a functionality of 
+    an organization can be more beneficiary.
+    DBA is a technically focused person, but he/she should understand more about the business to 
+    administer the database effectively.
+    The database administrator is person in the organization who control the design and the use 
+    of the database.
+    DBA provides necessary technical support for implementing a database.
+    DBA is involved more in the design, development , testing and operational phases.
+
+
+Functions/Responsibility of DBA : 
+
+    1. Schema definition:
+
+        DBA defines the logical schema of database.
+        A schema refers to the overall logical of the database.
+        According to this schema, database will be designed to store required data for an organization.
+
+    2. Storage structure and Access Method definition :
+
+        DBA decides how the data is to be represented in the data base.
+        Based on this, storage structure of the database and access methods of data is defined.
+
+
+# Date : 25-06-21 
+
+    3. Defining Security and Integrity Constrains:
+
+        DBA decides various security and integrity constraints.
+        DDL provides facilities to specifying such constraints.
+
+    4. Granting of Authorization for Data Access:
+
+        The DBA determines which user needs access to which part of the database.
+        According to this , various types of authorizations (permissions) 
+        are granted to different users.
+        This is required to prevent unauthorized access of a database.
+
+    5. Liaison with Users:
+
+        DBA is responsible to provide necessary data to user.
+        User should be able to write the external schema, using DDL.
+
+    6. Monitoring Performance :
+
+        The DBA monitors  performance of the system.
+        The DBA ensures that better performance is maintainced by making change in 
+        physical or logical schema if required.
+
+    7. Backup and Recovery:
+
+        Database should not be lost or damaged.
+        The task of DBA is to backing up the database on some storage devices such as DVD , 
+        CD or Magnetic Tape or remote servers.
+        In case of failure , such as flood or viurs attack , Database is recovered from this backup.
+
+    8. Assisting Application Programmers: 
+
+        DBA provides assistance to application Programmers to develop application programs.
+
+
+# Date : 28-06-21
+
+Data file indices and data dictionary : A Data Dictionary stores information about the structure of the 
+database. 
+It is used heavily. 
+Hence a good data dictionary should have a good design and efficient implementation.
+
+An ideal data dictionary should include everything a DBA wants to know about the 
+database.
+    1. External, conceptual and internal database descriptions.
+    2. Descriptions of entities (record types), attributes (fields), as well as cross references, 
+    origin and meaning of data elements.
+    3. Synonyms, authorisation and security codes.
+    4. Which external schemas are used by which programs, who the users are, and 
+    what their
+    authorisations are.
+    5. Statistics about database and its usage including number of records, etc.
+
+
+# UNIT - 2
+
+Data Model : There are many basic structure that exist in a database system , they are called database model.
+
+A database model defines :
+   1. The logical data structure
+   2. Data relationships
+   3. Data consistency constraints
+
+
+Hierarchical Model: It defines data as and relationships through hierarchy of data values. 
+Figure  shows an example of hierarchical model. 
+These models are now not used in commercial DBMS products.
+
+// diagram of Hierarchical Model
+
+# Date : 08-07-2021
+
+Network Model: In this model data is represented as records and relationship as links. 
+A simple network model example is explained in Figure. 
+It shows a sample diagram for such a system.
+This model is a very good model as far as conceptual framework is concerned 
+but is nowadays not used in database management 
+systems.
+
+// diagram of network model
+
+Object-Oriented Model: Defines the database as a collection of objects that contains both data 
+members/values and operations that are allowed on the data. 
+The interrelationships and constraints are implemented through objects, links and message 
+passing mechanisms. 
+Object-Models are useful for databases where data interrelationship are complex, 
+for example, Computer Assisted Design based components.
+
+Entity-Relationship Model : It is a collection of real world objects called entities and their relationships.
+It is mainly represented in graphical form using E-R diagrams.
+
+Relational Model : It represents data as well as relationship among data in the form of tables. 
+Constraints are stored in a meta-data table.
+This is a very simple model and is based on a proven mathematical theory.
+This is the most widely used data base mode.
+
+
+# 2 classes left
+
+
+Candidate Key : Super keys of a relation can contain extra attributes.
+Candidate keys are minimal super key, i.e; such a key contains no extraneous attributes . 
+An attributes is called extraneous if even after removing it from the key, makes th remaining attributes 
+still has the properties of a key.
+
+The following properties must be satisfied by the candidate keys:
+
+    A candidate key must be unique.
+    A candidate key's value must exitst. it cannot be null (This is also called entry intergrity rule)
+    A candidate key is a minimal set of attributes.
+    The value of a candidate  key must be stable. its value cannot change outside the control of the system.
+
+A relation can have more than one candidate keys and one of them can be chosen as a primary key.
+For example , in the relation PERSON the two possible candidate keys are PERSON ID and NAME (assuming unique 
+name in the table). PERSON-ID may be chosen as the primary key.
+
+Composit key : A Composit key having two or more attribute that together can uniquely identify 
+a tuple in a table.
+Such a key is also known as compound key.
+
+Alternate key : ALTERNATE KEYS is a column or group of columns in a table that uniquely identify every row in that table. 
+A table can have multiple choices for a primary key but only one can be set as the primary key. 
+All the keys which are not primary key are called an Alternate Key.
+
+Alternate key = Candidate key - primary key.
+A candidate key which is not primary key is known as Alternate key.
+
+ALTERNATE KEYS is a column or group of columns in a table that uniquely identify every row in that table. 
+A table can have multiple choices for a primary key but only one can be set as the primary key. 
+All the keys which are not primary key are called an Alternate Key.
+
+FOREIGN KEY is a column that creates a relationship between two tables. 
+The purpose of Foreign keys is to maintain data integrity and allow navigation between two different 
+instances of an entity. 
+It acts as a cross-reference between two tables as it references the primary key of another table.
+
+
+# Date : 21-07-2021
+
+Relational constraints :
+    There are three types of contrains in relations database that include domain constraints, primary key constraints, integrity constraints
+
+Domain constraint : It specifies that each attribute in a relation must contain an atomic value only from the corresponding domains. 
+The data types associated with commercial RDMBS domains include :
+    1. Standard numeric data types for integer (such as short-interger, integer, long-integer)
+    2. Real number (float, double precision floats)
+    3. Characters.
+    4. Fixed length strings and variable length strings.
+
+# Date : 22-07-2021
+
+Key constraints : This constraint states that the key attribute value in each tuple must be unique, i.e;
+no two tuple contain the same value  for the key attribute. This is because the value of the primary key is used to identify the tuples in the relation.
+
+// Table
+
+Integrity constraints : There are two types of integrity constraint.
+    1. Entity integrity constraint 
+    2. Refrencial integrity constraint
+
+Entity Integrity constraint : It states that no primary key value can be null.
+This is because the primary key is used to identify individual tuple in the relation. So we will not be able to identify the records uniquely containing null values for the primary key attributes.
+This constraint is specified on one individual relation.
+
+// Table
+
+In the relation R above, the primary key has null values in the tuples t1 & t3. NULL 
+value in primary key is not permitted, thus, relation instance is an invalid instance.
+
+
+Refrencial integrity constraint : It states that the tuple in one relation that refers to another relation must refer to an existing tuple
+in that relation.
+This constraint is specified on two relations ( not neccessarily distinct).
+It uses a concept of Foreign key and has been dealt with in more detail in the next unit.
+
+// Table
+
+# Date : 23-07-2021
+
+Relationla algebra : Relational Algebra is a set of basic operations used to manipulate the data in relational model.
+These operations enable the user to specify basic retrieval request.
+The result of retrieval is a new relation, formed from one or more relaions.
+These operations can be classified in two categories:
+
+Basic set operations
+    1. UNION
+    2. INTERSECTION
+    3. SET DIFFERENCE
+    4. CARTESIAN PRODUCT
+
+Relational operations
+    1. SELECT 
+    2. PROJECT
+    3. JOIN
+    4. DIVISION
+
+note : degree of table = no. of columns
+       cadnality = no. of rows
+
+Basic set operation : The binary operationS (UNION) is applied to two sets or relations.
+These two relations should be UNION compatible accept in case of cartesian product.
+
+Two relations R (A1, A2,…., An) and S (B1, B2,……,Bn) are said to be union compatible if 
+they have the same degree n and domains of the corresponding attributes are also the same i.e.Domain (Ai) = Domain (Bi) for 1<=i<=n.
+
+UNIO if R1 and R2 are two union compatible realtions then R3
+
+    .....
+
+INTERSECTION : 
+
+SET DIFFERENCE : 
+
+
+# 2 classes left
+
+
+# UNIT - 3
+
+# ER model :
+
+    1. ER model stand for an Entity relationship model.
+    It is a high-level data model. 
+    This model is used to define the data elements and relationship for a specified system.
+
+    2. It develops a conceptual design for the database .
+    It also develps a very simple and easy to design view of data.
+
+    3. In ER modeling,
+
+
+What is Attributes 
+
+
+# Date : 30-07-2021
+

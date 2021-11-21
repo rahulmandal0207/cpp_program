@@ -1,0 +1,76 @@
+
+Candidate Key : Super keys of a relation can contain extra attributes.
+Candidate keys are minimal super key, i.e; such a key contains no extraneous attributes . 
+An attributes is called extraneous if even after removing it from the key, makes th remaining attributes 
+still has the properties of a key.
+
+The following properties must be satisfied by the candidate keys:
+
+    A candidate key must be unique.
+    A candidate key's value must exitst. it cannot be null (This is also called entry intergrity rule)
+    A candidate key is a minimal set of attributes.
+    The value of a candidate  key must be stable. its value cannot change outside the control of the system.
+
+A relation can have more than one candidate keys and one of them can be chosen as a primary key.
+For example , in the relation PERSON the two possible candidate keys are PERSON ID and NAME (assuming unique 
+name in the table). PERSON-ID may be chosen as the primary key.
+
+Composit key : A Composit key having two or more attribute that together can uniquely identify 
+a tuple in a table.
+Such a key is also known as compound key.
+
+Alternate key : ALTERNATE KEYS is a column or group of columns in a table that uniquely identify every row in that table. 
+A table can have multiple choices for a primary key but only one can be set as the primary key. 
+All the keys which are not primary key are called an Alternate Key.
+
+Alternate key = Candidate key - primary key.
+A candidate key which is not primary key is known as Alternate key.
+
+ALTERNATE KEYS is a column or group of columns in a table that uniquely identify every row in that table. 
+A table can have multiple choices for a primary key but only one can be set as the primary key. 
+All the keys which are not primary key are called an Alternate Key.
+
+FOREIGN KEY is a column that creates a relationship between two tables. 
+The purpose of Foreign keys is to maintain data integrity and allow navigation between two different 
+instances of an entity. 
+It acts as a cross-reference between two tables as it references the primary key of another table.
+
+
+# Date : 21-07-2021
+
+Relational constraints :
+    Thre are three types of contrains in relations database that include domain constraints, primary key constraints, integrity constraints
+
+Domain constraint : It specifies that each attribute in a relation must contain an atomic value only from the corresponding domains. 
+The data types associated with commercial RDMBS domains include :
+    1. Standard numeric data types for integer (such as short-interger, integer, long-integer)
+    2. Real number (float, double precision floats)
+    3. Characters.
+    4. Fixed length strings and variable length strings.
+
+# Date : 22-07-2021
+
+Key constraints : This constraint states that the key attribute value in each tuple must be unique, i.e;
+no two tuple contain the same value  for the key attribute. This is because the value of the primary key is used to identify the tuples in the relation.
+
+// Table
+
+Integrity constraints : There are two types of integrity constraint.
+    1. Entity integrity consistent 
+    2. Refrencial integrity consistent
+
+Entity Integrity constraint : It states that no primary key value can be null.
+This is because the primary key is used to identify individual tuple in the relation. So we will not be able to identify the records uniquely containing null values for the primary key attributes.
+This constraint is specified on one individual relation.
+
+In the relation R above, the primary key has null values in the tuples t1 & t3. NULL 
+value in primary key is not permitted, thus, relation instance is an invalid instance.
+
+// Table
+
+Refrencial integrity constraint : It states that the tuple in one relation that refers to another relation must refer to an existing tuple
+in that relation.
+This constraint is specified on two relations ( not neccessarily distinct).
+It uses a concept of Foreign key and has been dealt with in more detail in the next unit.
+
+// Table
