@@ -1,54 +1,36 @@
-// WAP in C++ to print all ASCII character with their values.
 #include <iostream>
-#include <conio.h>
-#include <string>
-
+#include <math.h>
 using namespace std;
-
-class Birthday
-{
-private:
-    int date;
-    int month;
-    int year;
-
-public:
-    Birthday(int d, int m, int y)
-        : date(d), month(m), year(y)
-    {
-    }
-
-    void printDate()
-    {
-        cout << date << "/"
-             << month << "/"
-             << year << endl;
-    }
-};
-
-class Person
-{
-private:
-    string name;
-    Birthday bd;
-
-public:
-    Person(string n, Birthday b)
-        : name(n), bd(b)
-    {
-    }
-
-    void printInfo()
-    {
-        cout << name << " was born on ";
-        bd.printDate();
-    }
-};
 
 int main()
 {
-    Birthday bd(02, 07, 2000);
-    Person p("Rahul", bd);
-    p.printInfo();
+    float x, sum, term, fct, y, j, m;
+    int i, n;
+    y = 2;
+
+    cout << "\n\n Find the sum of the series 1 - X^2/2! + X^4/4!-....:\n";
+    cout << "---------------------------------------------------------\n";
+    cout << " Input the value of X: ";
+    cin >> x;
+    cout << " Input the value for nth term: ";
+    cin >> n;
+    sum = 1;
+    term = 1;
+    cout << " term 1 value is: " << term << endl;
+    for (i = 1; i < n; i++)
+    {
+        fct = 1;
+        for (j = 1; j <= y; j++)
+        {
+            fct = fct * j;
+        }
+        term = term * (-1);
+        m = pow(x, y) / fct;
+        m = m * term;
+        cout << " term " << i + 1 << " value is: " << m << endl;
+        sum = sum + m;
+        y += 2;
+    }
+    cout << " The sum of the above series is: " << sum << endl;
     return 0;
 }

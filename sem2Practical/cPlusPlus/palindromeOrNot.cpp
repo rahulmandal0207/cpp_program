@@ -16,9 +16,9 @@ int main()
         num /= 10;
     }
     if (rev == original)
-        cout << rev << " is palindrome number.\n";
+        cout << original << " is palindrome number.\n";
     else
-        cout << rev << " is not a plindrome number.\n";
+        cout << original << " is not a plindrome number.\n";
 
     getch();
     return 0;

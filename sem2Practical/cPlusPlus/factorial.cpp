@@ -16,7 +16,7 @@ int main()
     int n;
     cout << "Enter a number : ";
     cin >> n;
-    cout << "Fctorial of " << n << " is " << fact(n);
+    cout << "Factorial of " << n << " is " << fact(n);
     
     getch();
     return 0;
