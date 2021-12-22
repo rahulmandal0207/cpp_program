@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-   float l,b,area;
+    float l,b,area;
     cout<<"enter length ";
     cin>>l;
     cout<<"enter breadth ";
