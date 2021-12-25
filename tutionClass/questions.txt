@@ -10,7 +10,7 @@ C++
 8. Explain the differnce between call by value and call by reference.
 9. What is the differnce between type casting and type conversion.
 10. What are actual and formal parameters of a function.
-11. Briefly describe the functions of <iostream.h>
+11. Briefly explain the functions of <iostream.h>
 12. Explain the differnce between fundamental data type and derived data type.
 13. Features of C++
 14. Differnce between procedural and OOPs
