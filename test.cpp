@@ -1,27 +1,30 @@
 #include <iostream>
-
 using namespace std;
 
-class Item
+class MyClass
 {
-    static int m_count;
-
 public:
-    Item()
-    {
-        m_count++;
-    }
+    int x = 15;
 
-    void getCount()
+protected:
+    int y = 100;
+};
+
+class childClass : public MyClass
+{
+public:
+    void getPoints()
     {
-        cout << "Count : " << m_count;
+        cout << "X : " << x << endl;
+        cout << "Y : " << y << endl;
     }
 };
 
 int main()
 {
-    Item a;
+    childClass c1;
 
-    a.getCount();
+    c1.getPoints();
+
     return 0;
 }

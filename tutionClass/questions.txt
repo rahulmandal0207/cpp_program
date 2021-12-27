@@ -1,7 +1,7 @@
 C++
 
 1. What are static member of a class ? when and how are they usefull ?
-2. Differentiate between constuctor and destructor w.r.t OOPs.
+2. Differentiate between constuctor and destructor OOPs.
 3. Explain the role of a default constructor. Explain with a example
 4. Explain the functions of a destructor. List some special properties.
 5. What is a copy constructor. Explain its significance.
@@ -14,7 +14,8 @@ C++
 12. Explain the differnce between fundamental data type and derived data type.
 13. Features of C++
 14. Differnce between procedural and OOPs
-15. Differnce between C and C
+15. Differnce between C and C++
+
 
 Logic Design
 
@@ -32,4 +33,3 @@ Logic Design
     Counter - ripple counter
     4-bit parallel adder
     Shift register
- 
