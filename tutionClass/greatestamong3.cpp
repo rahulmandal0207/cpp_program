@@ -20,7 +20,7 @@ int main()
     {
         if (a == c)
         {
-            cout << "All are equal\n";
+            cout << "All are equal\n"; 
         }
         else if (a > c)
         {
