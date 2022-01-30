@@ -1,24 +1,32 @@
 #include <iostream>
 #include <conio.h>
+#include <math.h>
+
 using namespace std;
+
 int main()
 {
-    int n,a,r,sum,count=0;
-    for(n=100;n<=999;n+=1)
+    int n, a, r, c, sum, count = 0, digits;
+    for (n = 100; n <= 10000; n += 1)
     {
-        a=n,sum=0;
-        while(a>0)
+        a = c = n, sum = 0, digits = 0;
+        while (c > 0)
         {
-            r=a%10;
-            sum=sum+r*r*r;
-            a=a/10;
+            c /= 10;
+            digits++;
         }
-        if(sum==n)
+        while (a > 0)
         {
-            cout<<n<<"\t";
-            count+=1;
+            r = a % 10;
+            sum = sum + pow(r, digits);
+            a = a / 10;
+        }
+        if (sum == n)
+        {
+            cout << n << "\t";
+            count += 1;
         }
     }
-    cout<<count;
+    cout << "\nTotal Armstrong numbers : " << count;
     getch();
 }

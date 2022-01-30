@@ -19,7 +19,7 @@ int main()
             i++;
         }
         if (i == j)
-            counter++;
+            counter++;  .
         j++;
     }
 
