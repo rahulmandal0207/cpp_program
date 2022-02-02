@@ -1,27 +1,28 @@
 #include <iostream>
 #include <conio.h>
+
 using namespace std;
 
 int main()
 {
     int dec;
-    int rem;
-    int bin = 0;
-    int place = 1;
+    int oct[50];
+    int i = 0;
 
     cout << "Enter a decimal number : ";
     cin >> dec;
 
     while (dec > 0)
     {
-        rem = dec % 2;
-        bin = (rem * place) + bin;
-        dec /= 2;
-        place *= 10;
+        oct[i++] = dec % 8;
+        dec /= 8;
     }
 
-    cout << "Binary : " << bin;
+    cout << "Octal : ";
+    for (--i; i >= 0; i--)
+    {
+        cout << oct[i];
+    }
 
     getch();
-    return 0;
 }

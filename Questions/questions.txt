@@ -53,6 +53,58 @@
     Write a C++ program to find frequency of each digit in a given integer.
 
     WAP in C++ to print all ASCII character with their values.
+    
+    WAP in C++ to 
+
+    // Print & Display
+
+        1. To display The first 10 natural Number and their sum
+        2. To display The first 10 odd number And Their Sum 
+        3. To display the first 10 even number and their sum 
+        4. To display n term Of Natural Number and their sum 
+        5. To display the square of the number upto given Integer 
+        6. To display the cube of the number Upto given Integer
+        7. To display The multiplication Table of a Given Integer 
+        8. To display the multiplication Table vertically from 1 to n.
+        9. To display the n term of odd natural Number and their sum.
+        10. To display The n Term Of even natural Number and their sum.
+
+        //Sum & Series
+        1. To find the sum Of the series 
+           [1+x^2/2!+ x^4/4!+.........]
+        2. To display the n term of harmonic series & Their Sum.
+        3. To display the sum of the series [9+99+999+9999 ....]
+        4. To find the sum of the series 
+           [1+x+x^2/2!+x^3/3!+....]
+        5. To find the sum of the Series 
+           [x-x^3+x^5+..........]
+        6. The display the sum of the series [1+11+111+1111+ ......]
+
+
+        //find
+        1. To calculate the factorial of given number
+        2. To find the number and sum of all Integer and sum of all 
+            Integer b/w 100 and 200 which are divisible by 9.
+
+        //Converstion 
+
+        1. To convert a decimal number into binary without using an array.
+        2. To convert a binary to decimal without using an array. 
+
+
+
+        //special series
+        1. to print the fabonacci series.
+        2. to check the number is prime or not 
+        3. to print the Prime number upto 100.
+        4. to check the number is palindrome number.
+        5. to check the number is Armstrong Number.
+        6. to find  the factorial of a numbers.
+        7. to print the reverse of number.
+        8. to find  the HCF & LCM of a number
+        9. to find the sum of GP Series.
+        10. to find the sum of an A.P Series.
+        11. To check whether a given number is perfect number or not
 
 # Function
 
