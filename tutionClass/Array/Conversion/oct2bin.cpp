@@ -17,12 +17,9 @@ int main()
         rem = oct % 10;
         if (rem == 0)
         {
-            bin[i] = 0;
-            i++;
-            bin[i] = 0;
-            i++;
-            bin[i] = 0;
-            i++;
+            bin[i++] = 0;
+            bin[i++] = 0;
+            bin[i++] = 0;
         }
         else
         {
@@ -44,4 +41,4 @@ int main()
 
     getch();
     return 0;
-}/
+}
