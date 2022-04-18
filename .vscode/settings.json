@@ -76,7 +76,7 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "sqltools.connections": [],
     "C_Cpp.dimInactiveRegions": true,
-    "C_Cpp.autocomplete": "Disabled"
+    "C_Cpp.autocomplete": "Default"
     
     
 }

@@ -1,0 +1,13 @@
+
+MOTION
+    First equation of motion : v = u + at
+    Second equation of motion : s = ut + 1/2 * at^2
+    Third equation of motion : v^2 = 2as
+
+    NOTE 
+        s = displacement
+        u = initial velocity
+        v = final velocity
+        a = acceleration
+        t = time
+

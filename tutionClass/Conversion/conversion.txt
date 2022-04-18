@@ -1,0 +1,19 @@
+binary 
+    binary to decimal
+    binary to hexadecimal
+    binary to octal
+
+decimal 
+    decimal to binary            
+    decimal to hexadecimal
+    decimal to octal
+
+octal
+    octal to binary
+    octal to decimal
+    octal to hexadecimal
+
+hexadecimal
+    hexadecimal to binary
+    hexadecimal to decimal
+    hexadecimal to octal

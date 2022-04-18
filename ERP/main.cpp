@@ -1,16 +1,14 @@
 #include <iostream>
 #include <conio.h>
 
+#include "atm.cpp"
+
 using namespace std;
 
 int main()
 {
-    int dec;
-    int i;
-    int rem;
+    Atm card("Rahul", 342);
 
-    cout << "Enter a decimal number : ";
-    cin >> 
-
+    getch();
     return 0;
 }

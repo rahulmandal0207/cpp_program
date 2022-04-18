@@ -11,7 +11,7 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/g++.exe",
+            "compilerPath": "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe",
             "cStandard": "c89",
             "cppStandard": "c++11",
             "intelliSenseMode": "windows-gcc-x64"
@@ -44,33 +44,9 @@
             ],
             "windowsSdkVersion": "10.0.18362.0",
             "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/cl.exe",
-            "cStandard": "c17",
+            "cStandard": "c11",
             "cppStandard": "c++11",
             "intelliSenseMode": "windows-msvc-x64"
-        },
-        {
-            "name": "TDM",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "C:/TDM-GCC-32/bin/g++.exe",
-            "cStandard": "c17",
-            "cppStandard": "c++11",
-            "intelliSenseMode": "windows-gcc-x86",
-            "compilerArgs": [
-                "-lbgi",
-                "-lgdi32",
-                "-lcomdlg32",
-                "-luuid",
-                "-loleaut32",
-                "-lole32"
-            ]
         }
     ],
     "version": 4
