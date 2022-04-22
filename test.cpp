@@ -1,27 +1,15 @@
-#include <stdio.h>
+#include <iostream>
 #include <conio.h>
-#include <string.h>
-
-struct atm
-{
-    char Id[10];
-    double TotalAmt;
-    double WithdrawAmt;
-    double DepositAmt;
-    double TransferAmt;
-    int ErrorCount;
-    int PassCode;
-
-    atm(char *id, int pass)
-    {
-        strcpy(Id, id);
-        PassCode = pass;
-    }
-};
+using namespace std;
 
 int main()
 {
-    struct atm card("Rahul",1234);
-
+    int i = 1;
+    while(i <= 10)
+    {
+        cout << ++i << endl;
+        
+    }
     getch();
+    return 0;
 }
