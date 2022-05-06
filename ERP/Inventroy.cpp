@@ -61,7 +61,8 @@ public:
                 << left << setw(20) << "Selling price"
                 << left << setw(20) << "Quantity added"
                 << left << setw(20) << "Total Quantity"
-                << left << setw(20) << "Date of manuf." << left << setw(20) << "Amount"
+                << left << setw(20) << "Date of manuf." 
+                << left << setw(20) << "Amount"
                 << endl;*/
 
             cout << "***********************************************************************************************************************************" << endl;
@@ -88,7 +89,7 @@ public:
 
         if (id <= ID)
         {
-            cout << 
+            
         }
         else
         {
